@@ -10,8 +10,8 @@ Gem::Specification.new do |spec|
   spec.email         = ["sbaus87@gmail.com"]
 
   spec.summary       = %q{Output a multiplication table for a requested number of prime numbers}
-  # spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.description   = %q{Code Challenge: Create a program that returns a custom size n prime numbers multiplication table.}
+  spec.homepage      = "https://github.com/sbaus42/sb_prime_table"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
