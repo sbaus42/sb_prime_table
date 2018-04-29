@@ -6,7 +6,6 @@ class Primer
     @n_primes = get_primes
   end
 
-
   class << self
     def isPrime? n
       return false if n == 1
