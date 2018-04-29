@@ -6,11 +6,11 @@ require "sb_prime_table/version"
 Gem::Specification.new do |spec|
   spec.name          = "sb_prime_table"
   spec.version       = SbPrimeTable::VERSION
-  spec.authors       = ["TODO: Write your name"]
+  spec.authors       = ["Santiago Baus"]
   spec.email         = ["sbaus87@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
+  spec.summary       = %q{Output a multiplication table for a requested number of prime numbers}
+  # spec.description   = %q{TODO: Write a longer description or delete this line.}
   spec.homepage      = "TODO: Put your gem's website or public repo URL here."
   spec.license       = "MIT"
 
