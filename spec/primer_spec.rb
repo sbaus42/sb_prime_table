@@ -2,9 +2,18 @@ require 'pry'
 
 RSpec.describe Primer do
   describe "Instance methods" do
-    # n = rand(1..100)
-    n = 10
+    n = rand(1..100)
     primer = Primer.new n
+
+    describe '#initialize' do
+      it 'calculates 10 primes if no value is specified' do
+        expect(described_class.new.send(:get_primes).length).to eq(10)
+      end
+
+      it 'throws an error if an integer is not passed as an argument' do
+        expect{ described_class.new('foo') }.to raise_error(ArgumentError )
+      end
+    end
 
     describe "#get_primes" do
       it "returns an array the size of n" do

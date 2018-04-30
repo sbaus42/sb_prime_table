@@ -1,8 +1,12 @@
 # SbPrimeTable
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/sb_prime_table`. To experiment with that code, run `bin/console` for an interactive prompt.
+Code Challenge:
 
-TODO: Delete this and the text above, and describe your gem
+This is a program that prints out a multiplication table of the first N prime numbers.
+
+- Run from command line and print a table to STDOUT
+- The first row and column of the table will have the N primes
+- The user is allowed to specify different table sizes through command line options. In case of no argument passed into the program, the first 10 primes will be used by default
 
 ## Installation
 
@@ -22,7 +26,8 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Once the gem has been installed, you should be able to run the `sb_prime_table` command from the command line and get a prime multiplication table.
+Running the command without arguments will result in a 10x10 table. Large values (i.e. above the order of 1000) will take long to compute. Stop the program by pressing `ctrl + c` in your keyboard
 
 ## Development
 
@@ -32,12 +37,8 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/sb_prime_table. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Contributing is not permitted as this is an individual code challenge for the author Santiago Baus
 
 ## License
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
-## Code of Conduct
-
-Everyone interacting in the SbPrimeTable project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/sb_prime_table/blob/master/CODE_OF_CONDUCT.md).

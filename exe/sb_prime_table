@@ -1,5 +1,11 @@
-#! /usr/bin/env ruby
+#!/usr/bin/env ruby
 require 'sb_prime_table'
 
-# TODO: Add error handling for anything that is not an integer
-SbPrimeTable::create_table ARGV[0]
+if ARGV.empty?
+  SbPrimeTable::create_table
+elsif (Integer ARGV[0] rescue false)
+  SbPrimeTable::create_table ARGV[0].to_i
+else
+  puts "Acceptable arguments include an Integer or no argument"
+  puts "In the case of no argument, 'n' will be 10"
+end
