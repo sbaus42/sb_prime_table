@@ -4,8 +4,13 @@ require 'sb_prime_table'
 if ARGV.empty?
   SbPrimeTable::create_table
 elsif (Integer ARGV[0] rescue false)
-  SbPrimeTable::create_table ARGV[0].to_i
+  n = ARGV[0].to_i
+
+  if n > 0
+    SbPrimeTable::create_table ARGV[0].to_i
+  else
+    puts "Negative values are not acceptable"
 else
-  puts "Acceptable arguments include an Integer or no argument"
+  puts "Acceptable arguments include a positive Integer or no argument"
   puts "In the case of no argument, 'n' will be 10"
 end
