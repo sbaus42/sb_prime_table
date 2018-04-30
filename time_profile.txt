@@ -1,0 +1,116 @@
+n = 10
+
+ %   cumulative   self              self     total
+time   seconds   seconds    calls  ms/call  ms/call  name
+ 0.00     0.00      0.00        1     0.00     0.00  TracePoint#enable
+ 0.00     0.00      0.00        1     0.00     0.00  Class#inherited
+ 0.00     0.00      0.00        5     0.00     0.00  Module#method_added
+ 0.00     0.00      0.00        1     0.00     0.00  Module#private
+ 0.00     0.00      0.00        1     0.00     0.00  Kernel#respond_to?
+ 0.00     0.00      0.00        1     0.00     0.00  Integer#integer?
+ 0.00     0.00      0.00      112     0.00     0.00  Integer#<=>
+ 0.00     0.00      0.00       73     0.00     0.00  Integer#prime?
+ 0.00     0.00      0.00       30     0.00     0.00  Primer#get_primes
+ 0.00     0.00      0.00       54     0.00     0.00  Integer#succ
+ 0.00     0.00      0.00       28     0.00     0.00  Math.sqrt
+ 0.00     0.00      0.00       29     0.00     0.00  Range#each
+ 0.00     0.00      0.00       28     0.00     0.00  Enumerable#none?
+ 0.00     0.00      0.00      153     0.00     0.00  Array#push
+ 0.00     0.00      0.00        1     0.00     0.00  Array#flatten
+ 0.00     0.00      0.00      133     0.00     0.00  Primer#multiplication_table
+ 0.00     0.00      0.00       12     0.00     0.00  Array#each
+ 0.00     0.00      0.00        1     0.00     0.00  Primer#initialize
+ 0.00     0.00      0.00        1     0.00     0.00  Class#new
+ 0.00     0.00      0.00        2     0.00     0.00  Array#last
+ 0.00     0.00      0.00      121     0.00     0.00  Integer#to_s
+ 0.00     0.00      0.00        1     0.00     0.00  String#to_s
+ 0.00     0.00      0.00      121     0.00     0.00  String#rjust
+ 0.00     0.00      0.00      133     0.00     0.00  Primer#display_table
+ 0.00     0.00      0.00       12     0.00     0.00  Array#map
+ 0.00     0.00      0.00       11     0.00     0.00  Array#join
+ 0.00     0.00      0.00       12     0.00     0.00  IO#write
+ 0.00     0.00      0.00        2     0.00     0.00  IO#puts
+ 0.00     0.00      0.00        2     0.00     0.00  Kernel#puts
+ 0.00     0.00      0.00        1     0.00     0.00  TracePoint#disable
+ 0.00     0.01      0.00        1     0.00    10.00  #toplevel
+
+
+--------
+
+n = 100
+
+ %   cumulative   self              self     total
+time   seconds   seconds    calls  ms/call  ms/call  name
+26.09     0.06      0.06    10303     0.01     0.03  Primer#display_table
+17.39     0.10      0.04    10303     0.00     0.02  Primer#multiplication_table
+13.04     0.13      0.03      541     0.06     0.11  Range#each
+13.04     0.16      0.03      102     0.29     2.25  Array#map
+ 8.70     0.18      0.02      102     0.20     1.47  Array#each
+ 8.70     0.20      0.02    10503     0.00     0.00  Array#push
+ 8.70     0.22      0.02    10201     0.00     0.00  String#rjust
+ 4.35     0.23      0.01    10201     0.00     0.00  Integer#to_s
+ 0.00     0.23      0.00        1     0.00     0.00  TracePoint#enable
+ 0.00     0.23      0.00        1     0.00     0.00  Class#inherited
+ 0.00     0.23      0.00        5     0.00     0.00  Module#method_added
+ 0.00     0.23      0.00        1     0.00     0.00  Module#private
+ 0.00     0.23      0.00        1     0.00     0.00  Kernel#respond_to?
+ 0.00     0.23      0.00        1     0.00     0.00  Integer#integer?
+ 0.00     0.23      0.00     3519     0.00     0.00  Integer#<=>
+ 0.00     0.23      0.00     2878     0.00     0.01  Integer#prime?
+ 0.00     0.23      0.00      542     0.00     0.11  Primer#get_primes
+ 0.00     0.23      0.00     2437     0.00     0.00  Integer#succ
+ 0.00     0.23      0.00      540     0.00     0.00  Math.sqrt
+ 0.00     0.23      0.00      540     0.00     0.06  Enumerable#none?
+ 0.00     0.23      0.00        1     0.00     0.00  Array#flatten
+ 0.00     0.23      0.00        1     0.00   110.00  Primer#initialize
+ 0.00     0.23      0.00        1     0.00   110.00  Class#new
+ 0.00     0.23      0.00        2     0.00     0.00  Array#last
+ 0.00     0.23      0.00        1     0.00     0.00  String#to_s
+ 0.00     0.23      0.00      101     0.00     0.00  Array#join
+ 0.00     0.23      0.00      102     0.00     0.00  IO#write
+ 0.00     0.23      0.00        2     0.00     0.00  IO#puts
+ 0.00     0.23      0.00        2     0.00     0.00  Kernel#puts
+ 0.00     0.23      0.00        1     0.00     0.00  TracePoint#disable
+ 0.00     0.23      0.00        1     0.00   230.00  #toplevel
+
+--------
+
+n = 1000
+
+ %   cumulative   self              self     total
+time   seconds   seconds    calls  ms/call  ms/call  name
+32.89     6.71      6.71  1003003     0.01     0.03  Primer#display_table
+17.89    10.36      3.65  1003003     0.00     0.02  Primer#multiplication_table
+14.85    13.39      3.03     1002     3.02    23.61  Array#map
+14.71    16.39      3.00     1002     2.99    14.65  Array#each
+ 5.34    17.48      1.09  1002001     0.00     0.00  String#rjust
+ 4.85    18.47      0.99  1002001     0.00     0.00  Integer#to_s
+ 4.41    19.37      0.90     7919     0.11     0.28  Range#each
+ 3.43    20.07      0.70  1005003     0.00     0.00  Array#push
+ 0.49    20.17      0.10    93543     0.00     0.01  Integer#prime?
+ 0.39    20.25      0.08   102462     0.00     0.00  Integer#<=>
+ 0.34    20.32      0.07    86624     0.00     0.00  Integer#succ
+ 0.20    20.36      0.04     1001     0.04     0.04  Array#join
+ 0.10    20.38      0.02     7920     0.00     0.29  Primer#get_primes
+ 0.05    20.39      0.01     7918     0.00     0.13  Enumerable#none?
+ 0.05    20.40      0.01     1002     0.01     0.01  IO#write
+ 0.00    20.40      0.00        1     0.00     0.00  TracePoint#enable
+ 0.00    20.40      0.00        1     0.00     0.00  Class#inherited
+ 0.00    20.40      0.00        5     0.00     0.00  Module#method_added
+ 0.00    20.40      0.00        1     0.00     0.00  Module#private
+ 0.00    20.40      0.00        1     0.00     0.00  Kernel#respond_to?
+ 0.00    20.40      0.00        1     0.00     0.00  Integer#integer?
+ 0.00    20.40      0.00     7918     0.00     0.00  Math.sqrt
+ 0.00    20.40      0.00        1     0.00     0.00  Array#flatten
+ 0.00    20.40      0.00        1     0.00  8530.00  Primer#initialize
+ 0.00    20.40      0.00        1     0.00  8530.00  Class#new
+ 0.00    20.40      0.00        2     0.00     0.00  Array#last
+ 0.00    20.40      0.00        1     0.00     0.00  String#to_s
+ 0.00    20.40      0.00        2     0.00     5.00  IO#puts
+ 0.00    20.40      0.00        2     0.00     5.00  Kernel#puts
+ 0.00    20.40      0.00        1     0.00     0.00  TracePoint#disable
+ 0.00    20.40      0.00        1     0.00 20400.00  #toplevel
+
+
+--------
+
