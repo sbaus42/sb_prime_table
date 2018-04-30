@@ -1,2 +1,5 @@
 #! /usr/bin/env ruby
-puts "nothing"
+require 'sb_prime_table'
+
+# TODO: Add error handling for anything that is not an integer
+SbPrimeTable::create_table ARGV[0]
